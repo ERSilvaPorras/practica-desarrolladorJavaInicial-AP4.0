@@ -84,6 +84,21 @@ public class Introduction {
             if(numbers.get(i) % 2 == 0) { even.add(numbers.get(i)); }
         return even;
     }
+
+    // Punto 2.d
+    /**
+    * Returns a boolean value if a household belongs to the high-income segment, given income, vehicles,
+     * total property, and in all cases, it is additionally declared if it has luxurious real estate or
+     * full economic capacity with a single boolean value.
+     * @param income total monthly income of all people in a household.
+     * @param vehicles total vehicles of the people that make up a household.
+     * @param properties total properties of the people that make up a household.
+     * @param fullEconomy owns luxurious real estate or full economic capacity.
+     * @return Returns a boolean value, which indicates whether a household belongs to the high-income segment.
+     */
+    public boolean homeBelongsHighIncomeSegment(double income, int vehicles, int properties, boolean fullEconomy) {
+        return income >= 489083 || vehicles >= 3 || properties >=3 || fullEconomy == true;
+    }
     // Funcion Auxiliar  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     /**
      * Prints a sequence of integers in string format given a list of numbers.
