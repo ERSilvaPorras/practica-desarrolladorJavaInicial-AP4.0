@@ -70,6 +70,19 @@ public class Introduction {
         return filteredList;
     }
 
+    /**
+     * Returns a list of even integers within a range, including endpoints.
+     * @param start integer indicating the start of the interval.
+     * @param end integer indicating the end of the interval.
+     * @return returns a list of even integers within an interval defined by start and end.
+     */
+    public List<Integer> evenBetween(int start, int end) { // punto 1.d
+        List<Integer> numbers = numbersBetween(start, end);
+        List<Integer> even = new ArrayList<Integer>();
+        for (int i=0; i < numbers.size(); i++)
+            if(numbers.get(i) % 2 == 0) { even.add(numbers.get(i)); }
+        return even;
+    }
     // Funcion Auxiliar  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     /**
      * Prints a sequence of integers in string format given a list of numbers.
