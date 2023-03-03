@@ -12,3 +12,4 @@
     - [Solucion 2.c](./resources/img/arbol-de-decision.png)
     - [Solucion 2.d](https://github.com/ERSilvaPorras/practica-desarrolladorJavaInicial-AP4.0/blob/384c383c56e0b3ac39e854d0c52d6d944ea8b46c/src/solutions/Introduction.java#L88-L117)
 - [Git y Github]()
+> Los soluciones de los puntos 1 al 6 de la guia `Git y Github` se encuentran registrados en la creacion y desarrollo de este repositorio
