@@ -1,4 +1,4 @@
-# DesarrolladorJavaInicial
+# Practica de programa `DesarrolladorJavaInicial`
 
 ## Resolucion de actividades clase a clase
 - [Introduccion a Algoritmos y Java](./src/solutions/Introduction.java)
