@@ -103,7 +103,9 @@ public class ArrayAndString {
         char replacementChar;
         String encryptText = "";
         for(int i = 0; i < text.length(); i++) {
-            int indexInAlphabet = alphabet.indexOf(text.charAt(i));
+            char currentChar = text.charAt(i); // ñ
+            int indexInAlphabet = alphabet.indexOf(currentChar); // -1
+            if(indexInAlphabet == -1 ) {}
             int indexAlphabetWithDisplacement = indexInAlphabet + displacement;
             int indexAfterExceeding = indexAlphabetWithDisplacement - alphabet.length();
             if(indexAfterExceeding >= 0) { 
@@ -127,7 +129,7 @@ public class ArrayAndString {
         char replacementChar;
         String encryptText = "";
         for(int i = 0; i < text.length(); i++) {
-            int indexInAlphabet = alphabet.indexOf(text.charAt(i));
+            int indexInAlphabet = alphabet.indexOf(text.charAt(i)); // 14
             int indexAlphabetWithDisplacement = indexInAlphabet - displacement;
             int indexAfterExceeding = indexAlphabetWithDisplacement + alphabet.length();
             if(indexAfterExceeding < alphabet.length()) {
